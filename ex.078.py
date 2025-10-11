@@ -1,22 +1,22 @@
-lista_num = []
+listanum = []
 maior = 0
 menor = 0
-for c in range(0,5):
-    lista_num.append(int(input(f'Digite o valor na posição {c}: ')))
-    if c == 0:
-        maior = menor = lista_num[c]
+for cont in range(0,5):
+    listanum.append(int(input(f'Digite um valor na posição {cont}: ')))
+    if cont == 0:
+        maior = menor = listanum[cont]
     else:
-        if lista_num[c] > maior:
-            maior = lista_num[c]
-        if lista_num[c] < menor:
-            menor = lista_num[c]
+        if listanum[cont] > maior:
+            maior = listanum[cont]
+        if listanum[cont] < menor:
+            menor = listanum[cont]
 print('-='*30)
-print(f'Os valores digitados foram {lista_num}')
-print(f'O maior número foi {maior} nas posições ', end='')
-for pos, valor in enumerate(lista_num):
-    if valor == maior:
-        print(f'{pos}...', end='')
-print(f'\nO menor número foi {menor} nas posições ', end='')
-for pos, valor in enumerate(lista_num):
-    if valor == menor:
-        print(f'{pos}...', end='')
+print(f'Os valores que você digitou: {listanum}')
+print(f'O maior valor foi {maior} e se encontra nas posições ', end='')
+for p, valor in enumerate(listanum):
+    if maior == valor:
+        print(f'{p}...', end=' ')
+print(f'\nO menor valor foi {menor} e se encontra nas posições ', end='')
+for p, valor in enumerate(listanum):
+    if menor == valor:
+        print(f'{p}...', end=' ')
