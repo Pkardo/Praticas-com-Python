@@ -11,3 +11,5 @@ if soma == 0:
     print(f'Expressão CORRETA!')
 else:
     print(f'Expressão INVÁLIDA!')'''
+
+
