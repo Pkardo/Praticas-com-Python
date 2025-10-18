@@ -3,8 +3,6 @@ dados = list()
 cont = 0
 maior = 0
 menor = 0
-maior_p = []
-menor_p = []
 while True:
     dados.append(str(input('Nome: ')))
     while True:
@@ -28,14 +26,13 @@ while True:
     while duv not in 'SN':
         duv = str(input('Quer continuar(?)[S/N]')).upper().strip()
     if duv == 'N':
-        print(f'{lista_p}\n'
-              f'Tivemos um total de {cont} pessoas cadastradas.')
+        print(f'Tivemos um total de {cont} pessoas cadastradas.')
         print(f'O maior peso foi {maior}Kg. Peso de ', end='')
         for v in lista_p:
             if v[1] == maior:
-                print(v[0], end=' ')
+                print(f'[{v[0]}]', end=' ')
         print(f'\nO menor peso foi de {menor}Kg. Peso de ', end='')
         for v in lista_p:
             if v[1] == menor:
-                print(v[0], end=' ')
+                print(f'[{v[0]}]', end=' ')
         break
